@@ -1,0 +1,11 @@
+Lesson1 Exercises - HTML basics
+1a) Create a buttob with the "click" inside
+    <button> Click </button>
+
+1b) Create 2 Buttons. 1 with your name and 1 with your favorite food
+    <button> Venkat Kamal </button>
+    <button> Chocolate </button>
+1c) Create paragraph with the text Hello World! inside
+
+1d) Create a paragraph below the previous paragraph and write something you did today
+
