@@ -9,8 +9,8 @@
      all zeros will give you black */
     color:white;
     border: none;
-    height: 36px;
-    width: 105px;
+    /*height: 36px;
+    width: 105px;*/
     /* the below property is for curved borders for buttons or images  */
     border-radius: 2px;
     cursor: pointer;
@@ -42,8 +42,8 @@
     border-style: solid;
     border-width: 1px;
     color: rgb(41, 118, 200);
-    height: 36px;
-    width: 62px;
+    /*height: 36px;
+    width: 62px; */
     border-radius: 2px;
     cursor: pointer;
     margin-left: 8px;
@@ -68,8 +68,8 @@ space_around elements == margin, its syntax is as shown above*/
     background-color: rgb(2, 158, 255);
     color: white;
     border: none;
-    height: 36px;
-    width: 70px;
+   /* height: 36px;
+    width: 70px; */
     border-radius: 18px;
     font-weight: bold;
     font-size: 15px;
@@ -109,3 +109,34 @@ the positions of 0s are first one is horizontal
 second zero is bottom
 third zero is blur
 and next property us rgba (0, 0, 0, 1) */
+
+
+/*Part-4: Chrome DevTools & CSS BOX model
+hex to rgb calculator
+color: #1d9bf0;
+
+computed tab in dev tool
+we can find
+    height,
+    color,
+    background-color,
+
+CSS Box Model
+spacing of the css elements are margin
+
+and determining the height and width of the button
+is wrong because when content inside the button increases
+the content exceeds the outline. hence do not declare the height and width of the button.
+instead do not mention these.
+and
+add spaces inside the button called as PADDING
+like
+
+inside the button
+ex:
+.tweet-button{
+    padding-left: 20px;
+    padding-top: 40px;
+}
+margin-->border-->padding-->content;
+*/
