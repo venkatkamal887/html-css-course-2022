@@ -5,10 +5,15 @@ HTML and CSS reference: https://supersimple.dev/html
 
 Lessons:
 0:00 Intro
+understood
 1:02 1. HTML Basics
+understood
 17:42 2. CSS Basics
+understood
 44:39 3. Hovers, Transitions, Shadows
+understood but revise.
 1:03:10 4. Chrome DevTools & CSS Box Model
+
 1:17:30 5. Text Styles
 1:52:18 6. The HTML Structure
 2:11:08 7. Images and Text Boxes
@@ -28,3 +33,4 @@ Additional Information:
 This HTML CSS full course is a series of HTML CSS tutorials, teaching the major skills that we need to create complex websites. 
 Each HTML CSS tutorial builds on a project and provides some HTML CSS exercises to practice what we learned. 
 By the end, we'll learn the basics of web development and we'll be on our way to becoming a web developer and software engineer.
+

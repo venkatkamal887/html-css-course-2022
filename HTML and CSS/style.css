@@ -1,0 +1,111 @@
+/*part-2: CSS Basics*/
+
+/* buttons */
+.subscribe-button {
+    
+    background-color: rgb(200, 0, 0);
+    /*Each 0 coordinate represents red green and blue. which 0-255 is the range,
+     here the rgb is selected from color gradient box.
+     all zeros will give you black */
+    color:white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    /* the below property is for curved borders for buttons or images  */
+    border-radius: 2px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    /*Part-3 adding hover style to this button. the syntax is 
+    .subscribe-button:hover{
+        it is shown below
+    }*/
+}
+
+.subscribe-button:hover{
+      /*Part-3 adding hover style to this button. the syntax is 
+    .subscribe-button:hover{
+        :hover is the pseudo class
+    }*/
+    /*background-color: black;*/
+    opacity: 0.8;
+    /*opacity property ranges from 0 to 1*/
+   
+}
+.subscribe-button:active{
+   /* background-color: blue;*/
+    opacity: 0.5;
+}
+
+.join-button{
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 200);
+    height: 36px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 0.15s, color 0.15s;
+    
+/* In css to give space between buttons 
+space_around elements == margin, its syntax is as shown above*/
+}
+
+.join-button:hover{
+    background-color: rgb(41, 118, 200);
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.15s, color 0.15s;
+    transition: box-shadow 0.15s;
+}
+
+.join-button:active{
+    opacity: 0.7;
+}
+.tweet-button{
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 70px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    /*the positions of 0s are first one is horizontal
+    second zero is bottom
+    third zero is blur */
+}
+
+.tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* General technique to create a button is 
+1. create element(tag) with HTML
+2. Style with CSS one-by-one
+*/
+
+/*part-3: Intermediate CSS skills 
+Hovers, -- subscribe button
+Transitions, -- join button
+shadows of buttons -- tweet button
+*/
+
+/* transitions-- that is a smooth changeover 
+like smooth animations in buttorns
+for this add property as shown below
+transition: opacity 1s;
+*/
+/* box-shadow: 10px 10px 10px black/rgba(0, 0, 0, 1); 
+here a in rgba is the opacity value to see through.
+the number 1 present inside the rgba is for the value of "a",
+if we decrease the a value the opacity decrease 
+the positions of 0s are first one is horizontal
+second zero is bottom
+third zero is blur
+and next property us rgba (0, 0, 0, 1) */
