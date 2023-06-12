@@ -1,0 +1,193 @@
+/*.search-bar {
+    display: block;
+  }
+
+  by default the div's are diplay blocks. so we need to make them 
+  flex boxes by css style display: flex; like down below
+  */
+
+.header{
+    height: 55px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(240, 240, 240);
+
+}
+
+.left-section{
+    /*background-color: lightblue;
+    width: 150px;*/
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-logo{
+    height: 20px;
+}
+
+.middle-section{
+   /* background-color: lightpink; */
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*flex direction: row is the default value*/   
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+
+    /*
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    shortcut for the above lines are shown below*/
+
+    border: 1px solid rgb(192, 192, 192);;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search-bar::placeholder{
+    /*this above .search-bar::placeholder is the syntax for the <input  > element to the placeholder*/
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.search-button{
+    height: 40px;
+    width: 69px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-button .tooltip{
+    position: absolute;
+    font-size: 12px;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    bottom: -30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15;
+    pointer-events: none;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-search-button .tooltip{
+    position: absolute;
+    font-size: 12px;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    bottom: -30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15;
+    pointer-events: none;
+}
+.voice-search-button:hover .tooltip{
+    opacity: 1;
+}
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+}
+
+.voice-search-icon{
+    height: 24px;
+    margin-top: 4px;
+    
+}
+
+.right-section{
+    /*background-color: lightblue;*/
+    margin-right: 24px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0; /*here the property says the flex box does not shrink and 0 means not to shrink*/
+    /* flex-shrink: 0; == don't shrink 
+    width: 0; == to shrink */
+}
+
+.upload-icon{
+    height: 24px;
+}
+
+.youtube-apps-icon{
+    height: 24px;
+}
+
+.notifications-icon{
+    height: 24px;
+}
+.notifications-icon-container{
+    position: relative;
+    
+}
+.notifications-count{
+    font-family: Roboto, Arial;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-size: 12px;
+    border-radius: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+}
+.current-user-picture{
+    height: 32px;
+    border-radius: 16px;
+}
